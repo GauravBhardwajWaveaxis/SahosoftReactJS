@@ -1,15 +1,24 @@
-import react, { createElement } from "react";
-import reactDom from "react-dom";
+import React, { createElement } from "react";
+import ReactDOM from "react-dom";
 import Student from "./Student";
 
-let ele = <h1>This Is Welcome Page...</h1>;
+let ele1 = <h1>This Is Welcome Page !!!</h1>;
 
-let ele1 = createElement("div", null, "this is div element");
+let ele2 = React.createElement("h1", null, "Welcome to Sahosoft Solutions");
 
-reactDom.render(
+let ele3 = React.createElement(
+  "h1",
+  null,
+  createElement("h1", null, "Welcome to Sahosoft Solutions")
+);
+
+ReactDOM.render(
   <>
-    {ele}
     {ele1}
+
+    {ele2}
+
+    {ele3}
     <Student />
   </>,
   document.getElementById("root")

@@ -12,45 +12,59 @@ root.render(
   </React.StrictMode>
 );
 
-
-import React from "react";
-import ReactDOM from "react-dom";
-import Employee from "./employee.js";
-
-const obj = new Employee();
-
-ReactDOM.render(
-  <>
-    <h1>Hello My Name Is Gaurav Bhardwaj.</h1>
-    <h2>Welcome To ReactJS.</h2>
-    <button>Click Me</button>
-    {obj.admin()}
-  </>,
-
-  document.getElementById("root")
-);
-
-
-
-import React from "react";
-import ReactDOM from "react-dom";
-import emp from "./employee.js";
-
-const obj = new emp();
-
-ReactDOM.render(
-  <>
-    <h1>Hello My Name Is Gaurav Bhardwaj.</h1>
-    <h2>Welcome To ReactJS.</h2>
-    <button>Click Me</button>
-    {(obj.admin1(), obj.admin2())}
-    { {obj.admin2()} }
-  </>,
-
-  document.getElementById("root")
-);
-
 */
+
+import react from "react";
+import reactDOM from "react-dom";
+import empName from "./employee";
+
+reactDOM.render(
+  <>
+    <h1>Welcome to ReactJS Class</h1>
+    <h1>Hello My Name Is Gaurav Bhardwaj.</h1>
+    <h2>Welcome To ReactJS.</h2>
+    <button>Click Me</button>
+    {console.log(empName)}
+  </>,
+
+  document.getElementById("root")
+);
+
+// import react from "react";
+// import reactDOM from "react-dom";
+// import Employee from "./employee";
+
+// const obj = new Employee();
+
+// reactDOM.render(
+//   <>
+//     <h1>Welcome to ReactJS Class</h1>
+//     <h1>Hello My Name Is Gaurav Bhardwaj.</h1>
+//     <h2>Welcome To ReactJS.</h2>
+//     <button>Click Me</button>
+//     {obj.admin1()}
+//   </>,
+
+//   document.getElementById("root")
+// );
+
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import emp from "./employee.js";
+
+// const obj = new emp();
+
+// ReactDOM.render(
+//   <>
+//     <h1>Hello My Name Is Gaurav Bhardwaj.</h1>
+//     <h2>Welcome To ReactJS.</h2>
+//     <button>Click Me</button>
+//     {(obj.admin1(), obj.admin2())}
+//     { {obj.admin2()} }
+//   </>,
+
+//   document.getElementById("root")
+// );
 
 // import React from "react";
 // import ReactDOM from "react-dom";
@@ -107,25 +121,25 @@ ReactDOM.render(
 //   document.getElementById("root")
 // );
 
-import React from "react";
-import ReactDOM from "react-dom";
-// import e, { Employee, Student } from "./employee.js";
+// import React from "react";
+// import ReactDOM from "react-dom";
+// // import e, { Employee, Student } from "./employee.js";
 
-import * as data from "./employee";
+// import * as data from "./employee";
 
-// const obj1 = new Employee();
-// const obj2 = new Student();
+// // const obj1 = new Employee();
+// // const obj2 = new Student();
 
-const obj = data.Employee();
+// const obj = data.Employee();
 
-ReactDOM.render(
-  <>
-    <h1>Hello My Name Is Gaurav Bhardwaj.</h1>
-    <h2>Welcome To ReactJS.</h2>
-    <button>Click Me</button>
-    {/* {((obj1.admin(), obj2.getStudentDetail()), console.log(e()))} */}
-    {obj.admin1()}
-  </>,
+// ReactDOM.render(
+//   <>
+//     <h1>Hello My Name Is Gaurav Bhardwaj.</h1>
+//     <h2>Welcome To ReactJS.</h2>
+//     <button>Click Me</button>
+//     {/* {((obj1.admin(), obj2.getStudentDetail()), console.log(e()))} */}
+//     {obj.admin1()}
+//   </>,
 
-  document.getElementById("root")
-);
+//   document.getElementById("root")
+// );

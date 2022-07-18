@@ -19,25 +19,25 @@
 
 // export default var empName = "Gaurav Bhardwaj";
 
-// var empName = "Gaurav Bhardwaj";
-// export default empName;
+var empName = "Gaurav Bhardwaj";
+export default empName;
 
 //=============================Named Export========================//
 
-class Employee {
-  admin() {
-    console.log("This Is Admin Method!!!");
-  }
-}
+// class Employee {
+//   admin() {
+//     console.log("This Is Admin Method!!!");
+//   }
+// }
 
-class Student {
-  getStudentDetail() {
-    console.log("Get Student Details.");
-  }
-}
+// class Student {
+//   getStudentDetail() {
+//     console.log("Get Student Details.");
+//   }
+// }
 
-export default function getData(params) {
-  console.log("This Is Get Data Function !!!!!!");
-}
+// export default function getData(params) {
+//   console.log("This Is Get Data Function !!!!!!");
+// }
 
-export { Employee, Student };
+// export { Employee, Student };
