@@ -70,13 +70,63 @@ import PropTypes from "prop-types";
 //   document.getElementById("root")
 // );
 
-import Number from "./Number";
+// import Number from "./Number";
+
+// ReactDOM.render(
+//   <>
+//     {/* <Number numList={["43", "56", "43", "65", "34", "676"]} /> */}
+
+//     <Number Std={{ id: 10, city: "Bangalore" }} />
+//   </>,
+//   document.getElementById("root")
+// );
+
+// import Employee from "./Employee";
+
+// ReactDOM.render(
+//   <>
+//     <Employee id={35} mblNo={7017651577} />
+//   </>,
+//   document.getElementById("root")
+// );
+
+class Index extends Component {
+  // data = { id: 345, city: "Delhi", mblno: 545454 };
+
+  constructor(props) {
+    super(props);
+    // this.data = { id: 345, city: "Delhi", mblno: 545454 };
+
+    this.state = { id: 345, city: "Delhi", mblno: 545454 };
+  }
+
+  updateData = () => {
+    // this.data.city = "Bangalore";
+    // console.log(this.data.city);
+
+    this.setState({
+      id: 35,
+      city: "Bangalore",
+      mblno: 7017651577,
+    });
+  };
+
+  render() {
+    return (
+      <>
+        <h1>Id: {this.state.id}</h1>
+        <h1>City: {this.state.city}</h1>
+        <h1>Mblno: {this.state.mblno}</h1>
+
+        <button onClick={this.updateData}>Update</button>
+      </>
+    );
+  }
+}
 
 ReactDOM.render(
   <>
-    {/* <Number numList={["43", "56", "43", "65", "34", "676"]} /> */}
-
-    <Number Std={{ id: 10, city: "Bangalore" }} />
+    <Index />
   </>,
   document.getElementById("root")
 );
