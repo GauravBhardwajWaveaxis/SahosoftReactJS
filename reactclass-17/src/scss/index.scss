@@ -1,0 +1,15 @@
+$greenColor:'green';
+$fontSize:35px;
+$backColor:'yellow';
+
+.one{
+	color: $greenColor;
+	font-size: $fontSize;
+	background-color: $backColor;
+}
+
+.two{
+	color: $greenColor;
+	font-size: $fontSize;
+	background-color: $backColor;
+}
