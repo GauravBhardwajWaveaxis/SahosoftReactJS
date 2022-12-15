@@ -1,0 +1,15 @@
+$textColor:red;
+$textSize:35px;
+$backColor:yellow;
+
+.one{
+	color: $textColor;
+	font-size: $textSize;
+	background-color: $backColor;
+}
+
+.two{
+	color: $textColor;
+	background-color: aquamarine;
+	font-size: 30px;
+}

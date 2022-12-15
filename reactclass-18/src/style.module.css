@@ -1,0 +1,21 @@
+.font{
+	font-size: 35px;
+}
+
+.fontColor{
+	color: red;
+}
+
+
+.backColor{
+	background-color: pink;
+}
+
+
+.save{
+	background-color: darkgreen;
+}
+
+.cancel{
+	background-color: red;
+}
